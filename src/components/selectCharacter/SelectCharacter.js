@@ -24,7 +24,6 @@ export const SelectCharacter = () => {
 
   const getCharactersData = (e) => {
     setCharacter(e.target.value);
-    getFilmsData();
 
     return character;
   };

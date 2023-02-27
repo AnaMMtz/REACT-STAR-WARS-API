@@ -13,11 +13,9 @@ const CharacterCard = ({ character }) => {
         if (item.name === character) {
           const filmsArr = item.films;
           for (let i = 0; i < filmsArr.length; i++) {
-            console.log(filmsArr[i]);
             films.map((item) => {
               let urlFilm = item.url;
               if (urlFilm === filmsArr[i]) {
-                console.log('titulo', item.title);
                 title.push(item.title);
               }
             });
